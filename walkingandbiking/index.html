@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bridge and Tunnel</title>
+    <link href="../css/styles.css" rel="stylesheet">
+</head>
+<style>
+</style>
+<body>
+<div id="header">
+		<h1>Bridge and Tunnel</h1>
+	<div id="navbar">
+		<ul id ="navtabs">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../subway/index.html">Subway</a></li>
+			<li><a href="../bus/index.html">Bus</a></li>
+			<li><a href="../trains/index.html">Trains</a></li>
+			<li><a href="../carsandtaxis/index.html">Cars and Taxis</a></li>
+			<li id="selected"><a href="walkingandbiking/index.html">Walking and Biking</a></li>
+			<li><a href="../incharge/index.html">Who's in Charge?</a></li>
+		</ul>
+	</div>
+</div>
+<div id="twitterlist">
+<a class="twitter-timeline" href="https://twitter.com/AlizaChasan/lists/nyctransit" data-widget-id="568215212776763392">Tweets from https://twitter.com/AlizaChasan/lists/nyctransit</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+    <div id="graph" style="max-width: 65%; position: relative; left:2%; height: 400px"></div>
+    <div id="graph2" style="max-width: 65%%; position: relative; left:2%; height: 400px"></div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+  <!-- These are the highcharts code libraries. You need to connect to their code to be able to use the library and make charts -->
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+  <!-- This is the javascript stuff you need to actually make a chart -->
+
+
+  <script type = 'text/javascript'>
+        $(function () {
+    $('#graph').highcharts({
+        chart: {
+            type: 'area'
+        },
+        title: {
+            text: 'Pedestrian Injuries by Borough'
+        },
+        subtitle: {
+            text: 'Source: NYPD Crash Data'
+        },
+        xAxis: {
+            categories: ['January', 'February', 'March', 'April', 'May', 'June', 'July','August', 'September','October','November','December'],
+            tickmarkPlacement: 'on',
+            title: {
+                enabled: false
+            }
+        },
+        yAxis: {
+            title: {
+                text: 'Percent'
+            }
+        },
+        tooltip: {
+            pointFormat: '<span style="color:{series.color}">{series.name}</span>: ({point.y:,.0f} %)<br/>',
+            shared: true
+        },
+        plotOptions: {
+            area: {
+                stacking: 'percent',
+                lineColor: '#ffffff',
+                lineWidth: 1,
+                marker: {
+                    lineWidth: 1,
+                    lineColor: '#ffffff'
+                }
+            }
+        },
+        series: [{
+            name: 'Manhattan',
+            data: [25.30,29.76,23.95,24.94,24.15,22.42,23.58,27.29,23.17,23.22,23.50,20.91]
+        }, {
+            name: 'Brooklyn',
+            data: [31.81,26.83,21.11,32.67,32.54,34.96,31.61,33.10,35.02,33.02,31.27,33.88]
+        }, {
+            name: 'Bronx',
+            data: [31.81,26.83,21.11,32.67,32.54,34.96,31.61,33.10,35.02,33.02,31.27,33.88]
+       
+        }, {
+            name: 'Queens',
+            data: [24.74,25.12,22.69,21.08,23.13,22.21,23.06,22.30,22.77,23.94,25.76,25.54]
+        }, {
+          name: 'Staten Island',
+            data: [4.09,3.78,4.73,3.86,2.72,3.40,3.11,3.19,3.46,2.99,3.44,3.06]
+        }
+        ]
+    });
+});
+$(function () {
+    $('#graph2').highcharts({
+        title: {
+            text: 'Total of Traffic Related Fatalities',
+            x: -20 //center
+        },
+        subtitle: {
+            text: 'Source: NYPD Traffic Data',
+            x: -20
+        },
+        xAxis: {
+            categories: ['2004', '2005', '2006', '2007', '2008', '2009',
+                '2010', '2011', '2012', '2013', '2014']
+        },
+        yAxis: {
+            title: {
+                text: 'Number of Traffic Related Fatalities'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            valueSuffix: ''
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            name: 'Deaths',
+            data: [297,321,324,275,289,260,271,249,277,293,240]
+        }]
+    });
+});
+  </script>
+</body>
+</html>

@@ -2,7 +2,7 @@
 /*Author: Aliza Chasan */
 #header {
 	background-image: url("http://digitalstorage.journalism.cuny.edu/aliza.chasan/public_html/header.jpg");
-	background-size: cover; 
+	background-size: 100%; 
 }
 h1 {
 	font-size: 100px;
@@ -13,10 +13,20 @@ h1 {
 #navbar {
 	background-color: black;
 	display: inline-block;
+	color: white;
 }
-#tabs li {
+#navtabs li {
 	color: white;
 	display: inline;
+	font-size: 20px
+}
+#selected {
+	color: white;
+}
+li {
+	color: white;
+	padding: 41.3px;
+	border-right-color: white
 }
 #twitterlist {
 	position: absolute;
@@ -32,4 +42,22 @@ h1 {
 	left:2%;
 	max-width: 65%;
 }
- 
+#council {
+	position: relative;
+	left:2%;
+	max-width: 65%;
+}
+#councillist li {
+	color: black;
+	padding: 0;
+}
+#statesenate {
+	position: relative;
+	left:2%;
+	max-width: 65%;
+}
+#stateassembly {
+	position: relative;
+	left:2%;
+	max-width: 65%;
+}
