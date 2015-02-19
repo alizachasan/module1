@@ -1,9 +1,35 @@
 /* Website: Site Name v.1 */
 /*Author: Aliza Chasan */
+#header {
+	background-image: url("http://digitalstorage.journalism.cuny.edu/aliza.chasan/public_html/header.jpg");
+	background-size: cover; 
+}
 h1 {
 	font-size: 100px;
 	text-align: center;
+	color: white;
+	
 }
-h3 {
-	text-align: center;
+#navbar {
+	background-color: black;
+	display: inline-block;
 }
+#tabs li {
+	color: white;
+	display: inline;
+}
+#twitterlist {
+	position: absolute;
+    right: 2%;
+}
+#mostrecentstory {
+	position: relative;
+	left:2%;
+	max-width: 65%;
+}
+#nextrecentstory {
+	position: relative;
+	left:2%;
+	max-width: 65%;
+}
+ 
