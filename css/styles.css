@@ -1,41 +1,66 @@
 /* Website: Site Name v.1 */
 /*Author: Aliza Chasan */
+body {
+	background-color: #E5E5E5;
+}
+
 #header {
 	background-image: url("http://digitalstorage.journalism.cuny.edu/aliza.chasan/public_html/header.jpg");
-	background-size: 100%; 
+	background-size: cover; 
+	margin: 0px;
 }
 h1 {
 	font-size: 100px;
 	text-align: center;
 	color: white;
-	
+	min-width: 100%;
+	height:200px;
+	margin: 0px;
+	padding-top: 1%;
+	font-family: 'Signika', "Franklin Gothic Bold", "Arial Black", sans-serif;
 }
 #navbar {
 	background-color: black;
 	display: inline-block;
 	color: white;
+	text-decoration: none;
 }
 #navtabs li {
 	color: white;
 	display: inline;
-	font-size: 20px
+	font-size: 18.5px
 }
 #selected {
 	color: white;
 }
 li {
 	color: white;
-	padding: 41.3px;
-	border-right-color: white
+	padding-left: 41.3px;
+	padding-right: 41.3px;
+	border-right-color: white;
+	text-decoration: none;
 }
 #twitterlist {
 	position: absolute;
-    right: 2%;
+    right: .7%;
+}
+h2 {
+	color: rgb(85, 26, 139);
+}
+p {
+	  	font-family: georgia, "times new roman", garamond;
+}
+li {
+	  	font-family: georgia, "times new roman", garamond;
+
 }
 #mostrecentstory {
 	position: relative;
 	left:2%;
 	max-width: 65%;
+}
+#mostrecentstory img {
+	max-width: 99%;
 }
 #nextrecentstory {
 	position: relative;
@@ -50,14 +75,37 @@ li {
 #councillist li {
 	color: black;
 	padding: 0;
+	list-style: none;
+	line-height: 1.4em;
+}
+#councillist span {
+	font-weight: bold;
 }
 #statesenate {
 	position: relative;
 	left:2%;
 	max-width: 65%;
 }
+#statesenate li {
+	color: black;
+	padding: 0;
+	list-style: none;
+	line-height: 1.4em;
+}
+#statesenate span {
+		font-weight: bold;
+}
 #stateassembly {
 	position: relative;
 	left:2%;
 	max-width: 65%;
+}
+#stateassembly li {
+	color: black;
+	padding: 0;
+	list-style: none;	
+	line-height: 1.4em;
+}
+#stateassembly span {
+	font-weight: bold;
 }
