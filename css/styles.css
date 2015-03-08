@@ -8,6 +8,7 @@ body {
 	background-image: url("http://digitalstorage.journalism.cuny.edu/aliza.chasan/public_html/header.jpg");
 	background-size: cover; 
 	margin: 0px;
+	min-width: 100%;
 }
 h1 {
 	font-size: 100px;
@@ -23,7 +24,7 @@ h1 {
 	display: inline-block;
 	color: white;
 	text-decoration: none;
-	max-width: 100%;
+	min-width: 100%;
 }
 #navtabs li {
 	color: white;
