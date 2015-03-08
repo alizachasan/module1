@@ -52,6 +52,10 @@ h1 {
 h2 {
 	color: rgb(85, 26, 139);
 }
+span {
+	color: black;
+	font-style: bold;
+}
 p {
 	  	font-family: georgia, "times new roman", garamond;
 }
