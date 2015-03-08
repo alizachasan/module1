@@ -37,6 +37,7 @@ h1 {
 	text-decoration: none;
 	background-color: white;
 	border-radius: 10px, 10px, 0px, 0px;
+	width: 100%;
 }
 #navtabs li a {
 	text-decoration: none;
@@ -68,9 +69,11 @@ li {
 	position: relative;
 	left:2%;
 	max-width: 65%;
+	max-height: 700px;
 }
 #mostrecentstory img {
 	max-width: 99%;
+	max-height: 20%;
 }
 #nextrecentstory {
 	position: relative;
